@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="MyForm">
+        Select a PDF file:
+        <input type="file" name="MyFile" onchange="validatePDF(this)" />
+
+    </form>
+
+
+    <div class="form-validation">
+        <form action="/" method="GET">
+            <label for="name">NAME</label>
+            <input type="text" id="name" name="name">
+            <label for="pasword">PASWORD</label>
+            <input type="password" id="pasword" name="pasword">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+
+            <input type="submit" id="submit">
+        </form>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
